@@ -1,7 +1,10 @@
 # Robosys_Devicedriver
 2021年度ロボットシステム学 課題１
+ラズベリーパイに接続された7セグメントLEDに文字を表示させる。a~hまでの表示に対応しています。
 
-ラズベリーパイに接続された7セグメントLEDに文字を表示します。a~hまでの表示に対応しています。
+上田先生のプログラム
+https://github.com/ryuichiueda/robosys_device_drivers
+に必要な処理を追記しました。
 
 使用前にソースコード内のsegment配列に、LEDが接続されているGPIOの番号を格納する必要があります。
 
