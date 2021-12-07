@@ -8,9 +8,20 @@ https://github.com/ryuichiueda/robosys_device_drivers
 
 動作環境:Raspberry pi 3b,ubuntu20.04LTS
 
+実行方法
+1.ソースコード内のsegment配列に、LEDが接続されているGPIOの番号を格納する。
+
+2.ソースコードをビルドし、myled.koを作成する。
+
+3.sudo insmod myled.ko
+
+4.sudo mknod /dev/myled0 c メジャー番号　0
+
+5.sudo chmod 666 /dev/myled0
+
+6.echo 表示させる文字　>> /dev/myled0
 
 
-使用前にソースコード内のsegment配列に、LEDが接続されているGPIOの番号を格納する必要があります。
 
 文字を表示するには、表示させたいa~hまでの小文字を1文字デバイスファイルに格納します。
 
