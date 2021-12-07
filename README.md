@@ -9,6 +9,7 @@ https://github.com/ryuichiueda/robosys_device_drivers
 動作環境:Raspberry pi 3b,ubuntu20.04LTS
 
 実行方法
+
 1.ソースコード内のsegment配列に、LEDが接続されているGPIOの番号を格納する。
 
 2.ソースコードをビルドし、myled.koを作成する。
